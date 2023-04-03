@@ -1,0 +1,11 @@
+<p>country works!</p>
+
+<div class="list-container">
+    <div *ngFor="let country of countries" class="country-list">
+        <div class="name"><strong>{{ country.name.common }}</strong></div>
+        <div>Capitale : {{ country.capital }}</div>
+        <div>Langue(s) : {{ country.languages }}</div>
+        <div class="currency">Currency : {{ country.currencies }}</div>
+        <img [src]="country.flags.png" class="country-image">
+    </div>
+</div>
